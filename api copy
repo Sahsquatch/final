@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>Volume Control | Web Audio API</title>
+<body>
+<div id="container">
+  <div id="nav">
+    <ul>
+      <li><a href="/samples">Samples</a>
+      </li>
+    </ul>
+  </div>
+  <div id="header">
+    <h1><a href="/">Web Audio API</a></h1>
+  </div>
+
+  <div id="wrapper">
+    <div id="content">
+
+      
+<div class="post">
+  <h2>Volume Control</h2>
+  <p>
+    A very simple example that lets you change the volume using a GainNode.
+
+  </p>
+  <p>
+    </p><p><button style="display: block" onclick="sample.toggle();">Play/pause</button></p>
+
+<p><input type="range" min="0" max="100" value="100" oninput="sample.changeVolume(this);"> Volume</p>
+
+<script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script><script src="/static/js/shared.js"></script>
+<script src="volume-sample.js"></script>
+<script>
+var sample = new VolumeSample();
+</script>
+
+  <p></p>
+</div>
+ </div>
+  </div>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17930798-28']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  
+
+</div>
+</body>
+</html>

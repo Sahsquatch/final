@@ -1,0 +1,17 @@
+<html>
+<h1>Hi</h1>
+<body>
+<script type="text/javascript">
+var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+//auto buffer
+html: <audio class = 'soundfile' src="car drive.wav"</audio>
+var car_drive = document.querySelector('.soundfile');
+var source = audioContext.createMediaElementSource(car_drive);
+source.connect(audioContext.destination);
+car_drive.play();
+car_drive.pause();
+car_drive.stop();
+
+</script>
+ </body>
+</html>
