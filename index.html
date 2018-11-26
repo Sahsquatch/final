@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+div.a {
+    text-align: center;
+}
+</style>
+	<title>Fantastic Foley</title>
+</head>
+ <div class= "a">
+    <h1><a href="/"> Foley Using Web Audio API</a></h1>
+  </div>
+<body>
+    <style type="text/css">
+    	video {
+    		text-align: center;
+    		margin: 0 auto;
+    		display: block;
+    		width: 500px;
+    	}
+    </style>
+<video controls muted loop>
+  <source src="CharlieLion.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+
+   <p>Add sounds to the video above! Filter them as you like, and work as they loop along with the video. </p>
+<div style="width: 100%; overflow: hidden;">
+    <div style="width: 600px; float: left;"> 
+<div>
+
+<p><input type="button" onclick="horse.toggle();" value="horse"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="horse.changeFrequency(this);"> Frequency</p>
+</div>
+<div>
+
+<p><input type="button" onclick="gravel.toggle();" value="gravel"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="gravel.changeFrequency(this);"> Frequency</p>
+</div>
+
+<div>
+
+<p><input type="button" onclick="creek.toggle();" value="creek"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="creek.changeFrequency(this);"> Frequency</p>
+</div>
+   
+<div>
+
+<p><input type="button" onclick="rubbery.toggle();" value="rubbery"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="rubbery.changeFrequency(this);"> Frequency</p>
+</div>
+ </div>
+    <div style="margin-left: 620px;"> 
+<div>
+
+<p><input type="button" onclick="sample.toggle();" value="shaking jeans"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="sample.changeFrequency(this);"> Frequency</p>
+</div>
+
+<div>
+
+<p><input type="button" onclick="cat.toggle();" value="cat"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="cat.changeFrequency(this);"> Frequency</p>
+</div>
+<div>
+
+<p><input type="button" onclick="lion.toggle();" value="lion"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="lion.changeFrequency(this);"> Frequency</p>
+</div>
+  
+<p><input type="button" onclick="sigh.toggle();" value="sigh"></p>
+<p><input type="range" min="0" max="1" step="0.01" value="1" onchange="sigh.changeFrequency(this);"> Frequency</p>
+ 
+
+  </div>
+</div>
+
+
+
+
+
+<script src="shared.js"></script>
+<script src="filter.js"></script>
+<script src="filter2.js"></script>
+<script src="filter3.js"></script>
+<script src="filter4.js"></script>
+<script src="filter5.js"></script>
+<script src="filter6.js"></script>
+<script src="filter7.js"></script>
+
+<script src="filter9.js"></script>
+
+<script>
+var sample = new FilterSample();  
+var cat = new FilterSample2();  
+var horse = new FilterSample3();  
+var gravel = new FilterSample4(); 
+var lion = new FilterSample5(); 
+var creek = new FilterSample6(); 
+var rubbery = new FilterSample7(); 
+
+var sigh = new FilterSample9(); 
+</script>
+</body>
+</html>
+
